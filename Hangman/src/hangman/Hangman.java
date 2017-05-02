@@ -5,6 +5,8 @@
  */
 package hangman;
 
+import java.io.IOException;
+
 /**
  *
  * @author Simone
@@ -14,8 +16,11 @@ public class Hangman {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
         System.out.println("Che schifo");
+        
+        HangmanClient ciao = new HangmanClient();
+        ciao.requestClient();
     }
     
 }
